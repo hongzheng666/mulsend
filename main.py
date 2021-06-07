@@ -3,7 +3,8 @@ import pyautogui
 import subprocess
 import pyperclip
 
-subprocess.call(["/usr/bin/open", "/Applications/企业微信.app"])
+# subprocess.call(["/usr/bin/open", "/Applications/企业微信.app"])
+subprocess.Popen('C:\Program Files (x86)\WXWork\WXWork.exe')
 
 mobileList = ['13173604500', '18648149275', '13173604500', '18648149275']
 msg = '这是一条自动群发的消息反反复复'
