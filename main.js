@@ -1,8 +1,12 @@
 var robot = require('robotjs')
 const clipboardy = require('clipboardy')
-const { spawnSync } = require('child_process')
+// const { spawnSync } = require('child_process')
 
-spawnSync('/usr/bin/open', ['/Applications/企业微信.app'])
+// spawnSync('/usr/bin/open', ['/Applications/企业微信.app'])
+const { execFile } = require('child_process')
+
+const path = "C:\\Program Files (x86)\\WXWork\\WXWork.exe" 
+execFile(path, function(err, data) { if (err) { throw err; } console.log(data.toString()); });
 
 mobileList = ['13173604500', '18648149275', '15967654063', '18648149275']
 msg = '这是一条自动群发的消息反反复复'
